@@ -28,7 +28,7 @@ class ImprovementsController < ApplicationController
 
     respond_to do |format|
       if @improvement.save
-        format.html { redirect_to @improvement, notice: 'Improvement was successfully created.' }
+        format.html { redirect_to @improvement, notice: 'Thank you! Your advice was successfully submitted.' }
         format.json { render :show, status: :created, location: @improvement }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class ImprovementsController < ApplicationController
   def update
     respond_to do |format|
       if @improvement.update(improvement_params)
-        format.html { redirect_to @improvement, notice: 'Improvement was successfully updated.' }
+        format.html { redirect_to @improvement, notice: 'Advice was successfully updated.' }
         format.json { render :show, status: :ok, location: @improvement }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class ImprovementsController < ApplicationController
   def destroy
     @improvement.destroy
     respond_to do |format|
-      format.html { redirect_to improvements_url, notice: 'Improvement was successfully destroyed.' }
+      format.html { redirect_to improvements_url, notice: 'Advice was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
