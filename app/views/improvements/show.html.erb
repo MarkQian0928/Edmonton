@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @improvement.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @improvement.email %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @improvement.content %>
+</p>
+
+<%= link_to 'Edit', edit_improvement_path(@improvement) %> |
+<%= link_to 'Back', improvements_path %>
