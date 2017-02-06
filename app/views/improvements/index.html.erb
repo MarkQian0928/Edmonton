@@ -18,7 +18,6 @@
         <td><%= improvement.name %></td>
         <td><%= improvement.email %></td>
         <td><%= improvement.content %></td>
-        <td><%= link_to 'Show', improvement %></td>
         <td><%= link_to 'Edit', edit_improvement_path(improvement) %></td>
         <td><%= link_to 'Destroy', improvement, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -28,4 +27,12 @@
 
 <br>
 
+<p id=test></p>
+
 <%= link_to 'Back', new_like_path %>
+
+
+<!-- <script> 
+
+document.getElementById("number").innerHTML =  "Your are the " + NumLike + "th person who likes our service";
+</script> -->

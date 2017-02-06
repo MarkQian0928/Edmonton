@@ -1,3 +1,5 @@
+
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -8,16 +10,21 @@
 
 </p>
 
+
 <p id='number'></p>
+
+
 <%= link_to 'Back', new_like_path %>
 
 
-<script>
-window.location.href 
+<script> 
+	window.location.href 
+	
 var url = document.URL;
 var array = url.split('/');
 var NumLike = array[array.length-1];
 
-document.getElementById("number").innerHTML = NumLike;
-
+document.getElementById("number").innerHTML =  "Your are the " + NumLike + "th person who likes our service";
 </script>
+
+

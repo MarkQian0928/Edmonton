@@ -14,10 +14,23 @@
       <tr>
         <td><%= like.like %></td>
         <td><%= link_to 'Destroy', like, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
       </tr>
     <% end %>
+
   </tbody>
-</table>
+
+  </table>
+
+
+<% @likes.each do |like| %>
+
+  <%= like.id %>
+  <% end %>
+
+
+
+
 
 <br>
 
